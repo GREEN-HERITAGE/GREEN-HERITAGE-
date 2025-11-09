@@ -87,17 +87,39 @@
 
         .floating-leaf {
             position: absolute;
-            width: 80px;
-            height: 80px;
-            background: #AD8E68;
-            border-radius: 50% 0 50% 0;
-            opacity: 0.3;
+            opacity: 0.2;
             animation: float 6s infinite ease-in-out;
         }
+        
+        .floating-leaf::before {
+            content: '🌿';
+            font-size: 60px;
+            display: block;
+        }
 
-        .leaf1 { top: 20%; left: 10%; animation-delay: 0s; }
-        .leaf2 { top: 60%; right: 15%; animation-delay: 2s; }
-        .leaf3 { bottom: 20%; left: 20%; animation-delay: 4s; }
+        .leaf1 { top: 10%; left: 5%; animation-delay: 0s; }
+        .leaf1::before { font-size: 70px; }
+        
+        .leaf2 { top: 20%; right: 8%; animation-delay: 2s; }
+        .leaf2::before { font-size: 55px; }
+        
+        .leaf3 { top: 50%; left: 10%; animation-delay: 4s; }
+        .leaf3::before { font-size: 65px; }
+        
+        .leaf4 { top: 70%; left: 15%; animation-delay: 1s; }
+        .leaf4::before { font-size: 60px; }
+        
+        .leaf5 { bottom: 10%; left: 40%; animation-delay: 3s; }
+        .leaf5::before { font-size: 75px; }
+        
+        .leaf6 { top: 40%; right: 15%; animation-delay: 5s; }
+        .leaf6::before { font-size: 50px; }
+        
+        .leaf7 { top: 80%; right: 20%; animation-delay: 1.5s; }
+        .leaf7::before { font-size: 68px; }
+        
+        .leaf8 { bottom: 25%; right: 5%; animation-delay: 3.5s; }
+        .leaf8::before { font-size: 58px; }
 
         /* Common Section Styles */
         section {
@@ -393,6 +415,11 @@
         <div class="floating-leaf leaf1"></div>
         <div class="floating-leaf leaf2"></div>
         <div class="floating-leaf leaf3"></div>
+        <div class="floating-leaf leaf4"></div>
+        <div class="floating-leaf leaf5"></div>
+        <div class="floating-leaf leaf6"></div>
+        <div class="floating-leaf leaf7"></div>
+        <div class="floating-leaf leaf8"></div>
         <div class="hero-content">
             <h1>Perilla Chimichurri Sauce</h1>
             <p>Where Korean Aroma Meets South American Passion</p>
@@ -428,11 +455,11 @@
                 <div class="product-features">
                     <div class="feature-item">
                         <h3>🌿 100% Korean Perilla</h3>
-                        <p>Carefully selected fresh Korean perilla leaves</p>
+                        <p>Carefully selected fresh Korean perilla leaves, direct cultivation on company-owned farms</p>
                     </div>
                     <div class="feature-item">
-                        <h3>🌶️ Premium Herb Blend</h3>
-                        <p>Perfect harmony of parsley, oregano, and garlic</p>
+                        <h3>🍃 Premium Herb Blend</h3>
+                        <p>Perfect harmony of perilla, oil, and garlic</p>
                     </div>
                     <div class="feature-item">
                         <h3>✨ All-Natural Sauce</h3>
@@ -479,7 +506,7 @@
             <div class="usage-carousel">
                 <div class="usage-card">
                     <div class="image-placeholder" style="background: none; padding: 0;">
-                        <img src="https://github.com/user-attachments/assets/7ff031dc-a052-46af-9f18-1458f33e1390" alt="Grilled steak" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="https://github.com/user-attachments/assets/9967517f-13b8-467c-96a8-b4ad3f279ba7" alt="Grilled steak" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="usage-card-content">
                         <h3>Grill & Steak</h3>
@@ -514,6 +541,21 @@
             <h2>Experience It Now</h2>
             <p>Discover a new taste that makes your table special</p>
             <a href="https://buykorea.org/ec/prd/selectGoodsDetail.do?goodsSn=3759109" target="_blank" class="cta-button">SHOP NOW</a>
+            
+            <div style="margin-top: 60px; display: flex; justify-content: center; gap: 30px; align-items: center;">
+                <a href="https://www.linkedin.com/company/109550097/admin/analytics/followers/" target="_blank" style="display: flex; align-items: center; gap: 10px; color: #FEF7E8; text-decoration: none; font-size: 1.1em; padding: 15px 30px; background: rgba(254, 247, 232, 0.1); border-radius: 50px; transition: all 0.3s ease; border: 2px solid rgba(254, 247, 232, 0.3);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://www.facebook.com/your-page" target="_blank" style="display: flex; align-items: center; gap: 10px; color: #FEF7E8; text-decoration: none; font-size: 1.1em; padding: 15px 30px; background: rgba(254, 247, 232, 0.1); border-radius: 50px; transition: all 0.3s ease; border: 2px solid rgba(254, 247, 232, 0.3);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Meta (Facebook)
+                </a>
+            </div>
         </div>
     </section>
 
